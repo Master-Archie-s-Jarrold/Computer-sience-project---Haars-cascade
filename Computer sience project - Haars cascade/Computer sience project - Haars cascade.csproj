@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <RootNamespace>Computer_sience_project___Haars_cascade</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="garrys.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="bin\Debug\net6.0-windows\NegativeImages\" />
+    <Folder Include="bin\Debug\net6.0-windows\PositiveImages\" />
+    <Folder Include="bin\Debug\net6.0-windows\WriteNeg\" />
+    <Folder Include="bin\Debug\net6.0-windows\WritePos\" />
+  </ItemGroup>
+
+</Project>
