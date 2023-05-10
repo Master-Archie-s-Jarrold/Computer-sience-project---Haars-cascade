@@ -73,15 +73,70 @@
     <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage040.png" />
     <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage041.png" />
     <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage042.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\44-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\45-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\46-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\47-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\48-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\49-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\50-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\51-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\52-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\53-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\54-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\55-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\56-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\57-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\58-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\59-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WriteNeg\60-WrittenNeg.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\1-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\10-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\11-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\12-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\13-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\14-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\15-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\16-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\17-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\18-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\19-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\2-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\20-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\21-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\22-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\23-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\24-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\25-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\26-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\27-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\28-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\29-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\3-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\30-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\31-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\32-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\33-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\34-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\35-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\36-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\37-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\38-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\39-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\4-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\40-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\41-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\42-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\43-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\5-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\6-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\7-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\8-WrittenPos.png" />
+    <Content Include="bin\Debug\net6.0-windows\WritePos\9-WrittenPos.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="bin\Debug\net6.0-windows\WriteNeg\" />
-    <Folder Include="bin\Debug\net6.0-windows\WritePos\" />
   </ItemGroup>
 
 </Project>

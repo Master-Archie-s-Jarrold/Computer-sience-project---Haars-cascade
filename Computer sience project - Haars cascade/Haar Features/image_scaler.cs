@@ -91,7 +91,7 @@ namespace Haars_casde
             using (MemoryStream ms = new MemoryStream())
             {
 
-                using(FileStream fs = new FileStream(FileName,FileMode.Create,FileAccess.ReadWrite))
+                using(FileStream fs = new FileStream(FileName,FileMode.OpenOrCreate,FileAccess.ReadWrite))
                 {
                     
                     bp.Save(ms, ImageFormat.Png);
