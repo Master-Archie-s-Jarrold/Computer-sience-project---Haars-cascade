@@ -13,12 +13,73 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage000.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage001.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage002.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage003.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage004.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage005.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage006.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage007.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage008.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage009.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage010.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage011.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage012.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage013.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage014.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage015.png" />
+    <Content Include="bin\Debug\net6.0-windows\NegativeImages\NegativeImage016.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage000.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage001.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage002.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage003.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage004.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage005.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage006.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage007.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage008.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage009.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage010.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage011.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage012.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage013.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage014.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage015.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage016.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage017.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage018.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage019.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage020.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage021.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage022.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage023.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage024.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage025.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage026.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage027.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage028.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage029.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage030.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage031.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage032.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage033.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage034.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage035.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage036.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage037.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage038.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage039.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage040.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage041.png" />
+    <Content Include="bin\Debug\net6.0-windows\PositiveImages\PositiveImage042.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="bin\Debug\net6.0-windows\NegativeImages\" />
-    <Folder Include="bin\Debug\net6.0-windows\PositiveImages\" />
     <Folder Include="bin\Debug\net6.0-windows\WriteNeg\" />
     <Folder Include="bin\Debug\net6.0-windows\WritePos\" />
   </ItemGroup>
