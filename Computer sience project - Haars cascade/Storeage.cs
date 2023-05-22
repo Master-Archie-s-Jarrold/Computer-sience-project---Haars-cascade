@@ -69,7 +69,7 @@ namespace Computer_sience_project___Haars_cascade
             {
 
 
-                using (StreamWriter fs = new StreamWriter(Data[k][0,0]))
+                using (StreamWriter fs = new StreamWriter("ImageData//"+Data[k][0,0]))
                 {
                     for (int i = 0; i < Data[k].GetLength(0); i++)
                     {
