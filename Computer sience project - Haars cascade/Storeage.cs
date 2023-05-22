@@ -63,16 +63,24 @@ namespace Computer_sience_project___Haars_cascade
             FileNamesWriteNeg.Add(FileName);
         }
 
-        public void WriteInfo(string[,] Data )
-    {
-          
-            using (StreamWriter fs = new StreamWriter(Data[0,0]))
+        public void WriteInfo(string[][,] Data )
+        {
+            for (int k = 0; k < Data.Length; k++)
             {
-                for (int i = 0; i < Data.GetLength(0); i++)
+
+
+                using (StreamWriter fs = new StreamWriter(Data[k][0,0]))
                 {
-                fs.WriteLine(Data[i,0] +" "+ Data[i, 1] + " " + Data[i, 2] + " " + Data[i, 3]);
+                    for (int i = 0; i < Data[k].GetLength(0); i++)
+                    {
+                        for (int j = 0; j < Data[k].GetLength(1); j++)
+                        {
+                            fs.Write("," + Data[k][i, j]);
+                        }
+                        fs.WriteLine();
+                    }
+
                 }
-                
             }
         }
     }

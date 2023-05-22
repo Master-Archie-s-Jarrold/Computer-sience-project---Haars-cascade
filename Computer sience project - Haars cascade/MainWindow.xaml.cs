@@ -24,22 +24,21 @@ namespace Computer_sience_project___Haars_cascade
         public MainWindow()
         {
             InitializeComponent();
-            Storeage _Storeage = new Storeage();
-            image_scaler _Scaler = new image_scaler(_Storeage);
-            HaarLikeFeatures _Gradient = new HaarLikeFeatures(_Storeage);
+            Storeage _Storeage = new Storeage();// creates a global instance of storage
+            image_scaler _Scaler = new image_scaler(_Storeage);// creates a instance of Image_scaler
+            HaarLikeFeatures _Gradient = new HaarLikeFeatures(_Storeage);//creates a instance of HaarLikeFeatures
             
 
-            Image image_1 = new Image();
-            int FilesLength = 0;
+            
 
-            _Storeage.AddToFileNamesRead();
+            _Storeage.AddToFileNamesRead();// runs the File names in to a list in Storeage
 
-            foreach (string File in _Storeage.FileNamesReadPos)
+            foreach (string File in _Storeage.FileNamesReadPos)// runs through all the files in the postive image in storage
             {
                 _Scaler.imageScaler(File, 200,"Pos");
             }
 
-            foreach (string File in _Storeage.FileNamesReadNeg)
+            foreach (string File in _Storeage.FileNamesReadNeg)//runs through all the negative files in storeage
             {
                 _Scaler.imageScaler(File, 200,"Neg");
             }
@@ -47,14 +46,11 @@ namespace Computer_sience_project___Haars_cascade
 
 
 
-            _Gradient.CulmativeTheImage("pos");
-            _Gradient.CulmativeTheImage("neg");
+            _Gradient.CulmativeTheImage("pos");//for postive images
+            _Gradient.CulmativeTheImage("neg");//ForNegative images
 
 
-            image_1 = new Image();           
-            Canvas.SetTop(image_1, 0);
-            Canvas.SetLeft(image_1, 0);
-            can.Children.Add(image_1);
+           
         }
     }
 }

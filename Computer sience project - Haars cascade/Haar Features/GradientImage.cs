@@ -26,7 +26,7 @@ namespace Computer_sience_project___Haars_cascade
         Storeage _Storeage;
         double[][] ImageMatrix;
         int[][] imageDataMatrix;
-        string[,] data;
+        string[][,] data;
         int FileNumber;
         public HaarLikeFeatures(Storeage _Storeage)
         {
@@ -85,7 +85,13 @@ namespace Computer_sience_project___Haars_cascade
                 Lists = _Storeage.FileNamesWriteNeg;
             }
             FileNumber = 0;
-            data = new string[Lists.Count, 4];
+            data = new string[Lists.Count][,];
+
+            for (int i = 0; i < data.Length; i++)
+            {
+                data[i] = new string[20, 20];
+            }
+            
             foreach (string item in Lists)
             {
                 BitmapImage currentImage = new BitmapImage();
@@ -101,12 +107,33 @@ namespace Computer_sience_project___Haars_cascade
 
 
 
-               
 
-                data[FileNumber, 0] = "File"+FileNumber+".txt";
-                edge(20, 20, 10, 10);
-                line(20, 20, 10, 10);
-                corrner(20, 20, 10, 10);
+
+                data[FileNumber][0,0] = "File"+FileNumber+".txt";
+
+                for (int i = 0; i < 190; i+=10)
+
+                {
+                    for (int j = 0; j < 190; j+= 10)
+                    {
+                        try
+                        {
+                            if(j == 0 && i != 0)
+                            {
+                                data[FileNumber][i / 10, j / 10] = null;
+                            }
+                            data[FileNumber][i/10,(j/10)+1] = Convert.ToString( edge(10, 10, i, j,FileNumber));
+                        }
+                        catch (Exception e)
+                        {
+                            
+                        }
+                    }
+                   
+                }
+                
+                line(20, 20, 10, 10,FileNumber);
+                corrner(20, 20, 10, 10,FileNumber);
 
 
                 FileNumber++;
@@ -117,8 +144,8 @@ namespace Computer_sience_project___Haars_cascade
 
         private int FeatureValue(int rectx, int recty, int recth, int rectw)
         {
-
-
+            
+            
             for (int y = recty; y < recth + recty; y++)
             {
                 ImageMatrix[y] = new double[ImageMatrix.Length];
@@ -148,7 +175,7 @@ namespace Computer_sience_project___Haars_cascade
 
         }
 
-        void edge(int totalWidth, int height, int startingx, int startingy)
+        int edge(int totalWidth, int height, int startingx, int startingy,int FileNumber)
         {
             int rectx = startingx, recty = startingy, recth = height, rectw = totalWidth / 2;
             int rectx2 = totalWidth / 2 + startingx, recty2 = startingy, recth2 = height, rectw2 = totalWidth / 2;
@@ -157,10 +184,11 @@ namespace Computer_sience_project___Haars_cascade
             int rect2sum = FeatureValue(rectx2, recty2, recth2, rectw2);
 
             int feature = rect1sum - rect2sum;
-            data[FileNumber, 1] = Convert.ToString(feature);
+            
+            return feature; 
         }
 
-        void line(int totalWidth, int height, int startingx, int startingy)
+        void line(int totalWidth, int height, int startingx, int startingy,int FileNumber)
         {
             int rectx1w = startingx, recty1w = startingy, recth1w = height, rectw1w = totalWidth / 3;
             int rectx2b = startingx + totalWidth / 3, recty2b = startingy, recth2b = height, rectw2b = totalWidth / 3;
@@ -171,10 +199,10 @@ namespace Computer_sience_project___Haars_cascade
             int rect3sum = FeatureValue(rectx3w, recty3w, recth3w, rectw3w);
 
             int feature = rect1sum - rect2sum + rect3sum - rect2sum;
-            data[FileNumber, 2] = Convert.ToString(feature);
+            
 
         }
-        void corrner(int totalWidth, int height, int startingx, int startingy)
+        void corrner(int totalWidth, int height, int startingx, int startingy, int FileNumber)
         {
             int rectx1w = startingx, recty1w = startingy, recth1w = height / 2, rectw1w = totalWidth / 2;
             int rectx2b = startingx + totalWidth / 2, recty2b = startingy, recth2b = height / 2, rectw2b = totalWidth / 2;
@@ -188,7 +216,7 @@ namespace Computer_sience_project___Haars_cascade
             int rect4sum = FeatureValue(rectx4b, recty4b, recth4b, rectw4b);
 
             int feature = (rect3sum + rect1sum) - (rect2sum + rect4sum);
-            data[FileNumber, 3] = Convert.ToString(feature);
+           
 
         }
     }
