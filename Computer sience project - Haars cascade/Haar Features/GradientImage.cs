@@ -109,7 +109,7 @@ namespace Computer_sience_project___Haars_cascade
 
 
 
-                data[FileNumber][0,0] = "File"+FileNumber+".txt";
+                data[FileNumber][0,0] = "File|"+FileNumber+"|"+type+"|.txt";
 
                 for (int i = 0; i < 190; i+=10)
 
