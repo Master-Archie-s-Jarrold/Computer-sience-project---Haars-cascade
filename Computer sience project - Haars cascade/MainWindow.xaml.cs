@@ -1,4 +1,5 @@
-﻿using Haars_casde;
+﻿using Computer_sience_project___Haars_cascade.Haar_Features;
+using Haars_casde;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Media.Animation;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
@@ -49,6 +51,8 @@ namespace Computer_sience_project___Haars_cascade
             _Gradient.CulmativeTheImage("pos");//for postive images
             _Gradient.CulmativeTheImage("neg");//ForNegative images
 
+            drawOnImage draw = new drawOnImage();
+            draw.image();
 
            
         }

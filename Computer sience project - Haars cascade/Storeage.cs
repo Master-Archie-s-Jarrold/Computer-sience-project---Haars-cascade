@@ -75,7 +75,13 @@ namespace Computer_sience_project___Haars_cascade
                     {
                         for (int j = 0; j < Data[k].GetLength(1); j++)
                         {
-                            fs.Write("," + Data[k][i, j]);
+                            if (j != 0) {
+                                fs.Write("," + Data[k][i, j]);
+                            }else
+                            {
+                                fs.Write(Data[k][i, j]);
+                            }
+
                         }
                         fs.WriteLine();
                     }

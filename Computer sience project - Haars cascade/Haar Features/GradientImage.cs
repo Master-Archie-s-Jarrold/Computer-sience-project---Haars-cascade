@@ -109,20 +109,21 @@ namespace Computer_sience_project___Haars_cascade
 
 
 
-                data[FileNumber][0,0] = "File|"+FileNumber+"|"+type+"|.txt";
+                data[FileNumber][0,0] = "File;"+FileNumber+";"+type+".txt";
+                int numberOfLinesOnImage = 20;
 
-                for (int i = 0; i < 190; i+=10)
+                for (int x = 0; x < currentImage.Width; x+=10)
 
                 {
-                    for (int j = 0; j < 190; j+= 10)
+                    for (int y = 0; y < currentImage.Height; y+= 10)
                     {
                         try
                         {
-                            if(j == 0 && i != 0)
+                            if(y == 0 && x != 0)
                             {
-                                data[FileNumber][i / 10, j / 10] = null;
+                                data[FileNumber][x / 10, y / 10] = null;
                             }
-                            data[FileNumber][i/10,(j/10)+1] = Convert.ToString( edge(10, 10, i, j,FileNumber));
+                            data[FileNumber][x/10,(y/10)+1] = Convert.ToString( edge(10, 10, x, y,FileNumber));
                         }
                         catch (Exception e)
                         {
@@ -146,32 +147,32 @@ namespace Computer_sience_project___Haars_cascade
         {
             
             
-            for (int y = recty; y < recth + recty; y++)
+            for (int x = rectx; x < rectw + rectx; x++)
             {
-                ImageMatrix[y] = new double[ImageMatrix.Length];
-                for (int x = rectx; x < rectw + rectx; x++)
+                ImageMatrix[x] = new double[ImageMatrix.Length];
+                for (int y = recty; y < recth + recty; y++)
                 {
                     if (y == recty && x == rectx)
                     {
-                        ImageMatrix[y][x] = imageDataMatrix[y][x * 4];
+                        ImageMatrix[x][y] = imageDataMatrix[x][y * 4];
                     }
                     else if (y == recty && x != rectx)
                     {
-                        ImageMatrix[y][x] = imageDataMatrix[y][x * 4] + ImageMatrix[y][(x) - 1];
+                        ImageMatrix[x][y] = imageDataMatrix[x][y * 4] + ImageMatrix[x][(y) - 1];
                     }
                     else if (x == rectx && y != recty)
                     {
-                        ImageMatrix[y][x] = imageDataMatrix[y][x * 4] + ImageMatrix[y - 1][x];
+                        ImageMatrix[x][y] = imageDataMatrix[x][y * 4] + ImageMatrix[x - 1][y];
                     }
                     else
                     {
-                        ImageMatrix[y][x] = (imageDataMatrix[y][x * 4] + ImageMatrix[y - 1][x] + ImageMatrix[y][x - 1]) - ImageMatrix[y - 1][x - 1];
+                        ImageMatrix[x][y] = (imageDataMatrix[x][y * 4] + ImageMatrix[x - 1][y] + ImageMatrix[x][y - 1]) - ImageMatrix[x - 1][y- 1];
                     }
                 }
 
 
             }
-            return (int)ImageMatrix[recth + recty - 1][rectw + rectx - 1];
+            return (int)ImageMatrix[rectw + rectx - 1][recth + recty - 1];
 
         }
 
