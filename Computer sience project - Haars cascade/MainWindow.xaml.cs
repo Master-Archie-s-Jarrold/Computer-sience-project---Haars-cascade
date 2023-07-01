@@ -28,7 +28,7 @@ namespace Computer_sience_project___Haars_cascade
             InitializeComponent();
             Storeage _Storeage = new Storeage();// creates a global instance of storage
             image_scaler _Scaler = new image_scaler(_Storeage);// creates a instance of Image_scaler
-            HaarLikeFeatures _Gradient = new HaarLikeFeatures(_Storeage);//creates a instance of HaarLikeFeatures
+            HaarLikeFeatures _HaarLikeFeatures = new HaarLikeFeatures(_Storeage);//creates a instance of HaarLikeFeatures
             
 
             
@@ -38,18 +38,22 @@ namespace Computer_sience_project___Haars_cascade
             foreach (string File in _Storeage.FileNamesReadPos)// runs through all the files in the postive image in storage
             {
                 _Scaler.imageScaler(File, 200,"Pos");
+                
             }
-
+            _Scaler.FileNumber = 0;
             foreach (string File in _Storeage.FileNamesReadNeg)//runs through all the negative files in storeage
             {
                 _Scaler.imageScaler(File, 200,"Neg");
             }
 
+            foreach (string File in _Storeage.FileNamesWritePos)
+            {
+                _HaarLikeFeatures.HaarFeatures(File, "Pos");
+            }
 
 
 
-            _Gradient.CulmativeTheImage("pos");//for postive images
-            _Gradient.CulmativeTheImage("neg");//ForNegative images
+            
 
             drawOnImage draw = new drawOnImage();
             draw.image();

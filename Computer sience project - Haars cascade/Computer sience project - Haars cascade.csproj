@@ -9,6 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="bin\Debug\net6.0-windows\ImageData\NewFolder\**" />
+    <EmbeddedResource Remove="bin\Debug\net6.0-windows\ImageData\NewFolder\**" />
+    <None Remove="bin\Debug\net6.0-windows\ImageData\NewFolder\**" />
+    <Page Remove="bin\Debug\net6.0-windows\ImageData\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="garrys.png" />
   </ItemGroup>
 
@@ -82,7 +89,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="bin\Debug\net6.0-windows\ImageData\NewFolder\" />
+    <Folder Include="bin\Debug\net6.0-windows\ImageData\" />
   </ItemGroup>
 
 </Project>

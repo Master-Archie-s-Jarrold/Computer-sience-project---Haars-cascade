@@ -14,10 +14,10 @@ namespace Computer_sience_project___Haars_cascade.Haar_Features
 
         public void image()
         {
-            Image bt = Image.FromFile("WritePos//44-WrittenPos.png");
+            Image bt = Image.FromFile("WritePos//43-WrittenPos.png");
             int[,] image = new int[19, 19];
             string Files;
-            using (StreamReader sr = new StreamReader("ImageData//File;43;Pos.txt"))
+            using (StreamReader sr = new StreamReader("ImageData//File;42;Pos.txt"))
             {
                 for (int i = 0; i < 19; i++)
                 {

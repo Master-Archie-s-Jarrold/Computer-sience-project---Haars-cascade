@@ -5,7 +5,9 @@ using System.Linq;
 using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace Computer_sience_project___Haars_cascade
 {
@@ -92,6 +94,21 @@ namespace Computer_sience_project___Haars_cascade
 
                 }
             }
+        }
+
+
+        public Image LoadImage(string FileName)
+        {
+            Image img = new Image();
+            BitmapImage bitmap = new BitmapImage();
+
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri(FileName,UriKind.Relative);
+            bitmap.EndInit();
+
+            img.Source = bitmap;
+
+            return null;
         }
     }
 }

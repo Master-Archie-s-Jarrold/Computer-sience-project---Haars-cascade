@@ -20,7 +20,7 @@ namespace Haars_casde
 {
     public class image_scaler
     {
-        int FileNumber;// the number the defines the files name
+        public int FileNumber;// the number the defines the files name
         Storeage _Storeage;
         public image_scaler(Storeage _Storeage)
         {
