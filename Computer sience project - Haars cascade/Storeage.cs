@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
@@ -97,18 +99,23 @@ namespace Computer_sience_project___Haars_cascade
         }
 
 
-        public Image LoadImage(string FileName)
+        public BitmapImage LoadImage(string FileName)
         {
-            Image img = new Image();
-            BitmapImage bitmap = new BitmapImage();
+            System.Drawing.Image img =System.Drawing.Image.FromFile(FileName);
+            BitmapImage bit = new BitmapImage();
 
-            bitmap.BeginInit();
-            bitmap.UriSource = new Uri(FileName,UriKind.Relative);
-            bitmap.EndInit();
+            using(MemoryStream ms = new MemoryStream())
+            {
+                img.Save(ms, ImageFormat.Png);
+                ms.Seek(0, SeekOrigin.Begin);
 
-            img.Source = bitmap;
+                bit.BeginInit();
+                bit.CacheOption = BitmapCacheOption.OnLoad;
+                bit.StreamSource = ms;
+                bit.EndInit();
+            }
 
-            return null;
-        }
+            return bit;
+         }
     }
 }

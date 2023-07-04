@@ -18,6 +18,7 @@ using System.Windows.Navigation;
 using System.Windows.Media.Media3D;
 
 using System.Windows.Documents;
+using System.Transactions;
 
 namespace Computer_sience_project___Haars_cascade
 {
@@ -34,11 +35,39 @@ namespace Computer_sience_project___Haars_cascade
         public void HaarFeatures(string name, string FileType)
         {
 
+
+            BitmapImage image = new BitmapImage();
+            image= _Storeage.LoadImage(name);   
             
-            Image image = _Storeage.LoadImage(name);
-            MessageBox.Show("");
+
+                      
 
 
+
+
+        }
+
+        public int[][] convert(int[] data , BitmapImage image)
+        {
+
+            int heigth = image.PixelHeight;
+            int width = image.PixelWidth;
+
+            for (int x = 0; x < width; x++)
+            {
+
+                for (int y = 0; y < heigth; y++)
+                {
+
+                }
+
+            }
+
+
+
+
+
+            return null;
         }
         
         
